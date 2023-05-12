@@ -6,5 +6,5 @@ function getKeyString(x, y) {
 }
 
 (function () {
-    firebase.auth().signInAnonymously();
+   auth.signInAnonymously();
 })();

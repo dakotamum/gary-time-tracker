@@ -7,6 +7,33 @@
         <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
     <body>
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getAuth } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBSsR8_MySoXAxQ-NKVED7kjvwa7ue0X7M",
+          authDomain: "gary-time-tracker.firebaseapp.com",
+          databaseURL: "https://gary-time-tracker-default-rtdb.firebaseio.com",
+          projectId: "gary-time-tracker",
+          storageBucket: "gary-time-tracker.appspot.com",
+          messagingSenderId: "290073958895",
+          appId: "1:290073958895:web:47387ad4b0f042dd16be1a"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+      </script>
+
+      <script src="/KeyPressListener.js"></script>
+      <script src="/app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
         <div class="game-container">
         </div>
         <div class="player-info">
@@ -18,25 +45,5 @@
             <button id="player-color">Change Color</button>
           </div>
         </div>
-        <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js"></script>    
-        <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyBSsR8_MySoXAxQ-NKVED7kjvwa7ue0X7M",
-            authDomain: "gary-time-tracker.firebaseapp.com",
-            databaseURL: "https://gary-time-tracker-default-rtdb.firebaseio.com",
-            projectId: "gary-time-tracker",
-            storageBucket: "gary-time-tracker.appspot.com",
-            messagingSenderId: "290073958895",
-            appId: "1:290073958895:web:47387ad4b0f042dd16be1a"
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        </script>
-
-        <script src="/KeyPressListener.js"></script>
-        <script src="/app.js"></script>
     </body>
 </html>
