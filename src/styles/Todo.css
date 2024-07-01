@@ -1,0 +1,13 @@
+.todo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  border: solid white 0.3vh;
+  transition: background-color ease 0.5s;
+  /* transition: border-color ease 0.5s; */
+}
+
+.todo-container:hover {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  background-color: var(--primary-color);
+}

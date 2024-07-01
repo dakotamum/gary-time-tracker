@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import './styles/App.css';
+import './styles/Common.css'
+import Header from './components/Header';
+import Todo from './components/Todo';
 
 function App() {
+
+  const [theme, setTheme] = useState('sevendeez');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" data-theme={theme}>
+      <Header />
+      <Todo status="pending" name="do this" priority="high"/>
+      <Todo status="pending" name="no, do this" priority="high"/>
+      <div className="generic-div">
+        Add Do
+      </div>
     </div>
   );
 }

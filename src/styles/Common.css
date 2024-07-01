@@ -1,0 +1,58 @@
+  [data-theme="purps"] {
+    --primary-color: #9055a2;
+    --secondary-color: #2dc2bd;
+    --tertiary-color: #61e786;
+    --quadiary-color: #7bc950;
+    --dark-color: #240115;
+    --text-color: #2e3532;
+    --background-color: #e8d7f1;
+  }
+
+  [data-theme="subdude"] {
+    --primary-color: #820b8a;
+    --secondary-color: #af9ab2;
+    --tertiary-color: #c7ede4;
+    --quadiary-color: #7bc950;
+    --dark-color: #240115;
+    --text-color: #672A4E;
+    --background-color: #d5fff3;
+  }
+
+  [data-theme="wowza"] {
+    --primary-color:#5AFF15;
+    --secondary-color:#9D75CB;
+    --tertiary-color: #AAFFE5;
+    --quadiary-color: #7bc950;
+    --dark-color: #240115;
+    --text-color: #8C1A6A;
+    --background-color: #A657AE;
+  }
+
+  [data-theme="sevendeez"] {
+    --primary-color:#87f5fb;
+    --secondary-color:#de3c4b;
+    --tertiary-color: #cec3c1;
+    --quadiary-color: #7bc950;
+    --dark-color: #240115;
+    --text-color: black;
+    --background-color: white;
+  }
+
+.generic-div {
+  background-color: var(--tertiary-color);
+  /* color: var(--text-color); */
+  color: black;
+  padding: 0.75%;
+  margin: 0.5%;
+  /* font-size: x-large; */
+  /* border: solid var(--text-color) 0.3vh; */
+  transition: background-color ease .3s;
+  border: solid white 0.3vh;
+  border-radius: 0.5vh;
+  /* transition: box-shadow ease .3s; */
+}
+
+.generic-div:hover {
+  /* background-color: var(--dark-color); */
+  /* box-shadow: var(--secondary-color) 0 0 0; */
+}
